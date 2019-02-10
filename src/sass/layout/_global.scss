@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: 'Lato', sans-serif;
+}
+a {
+	color: #e2492f;
+	&:hover {
+		text-decoration: none;
+		color: #757575;
+	}
+	&.default__link {
+		color: #757575;
+		&:hover {
+			color: #e2492f;
+		}
+	}
+}
+.small {
+	font-size: 12px;
+}
+.primary {
+	color: #e2492f;
+}
+.grey {
+	color: #757575;
+}
+img {
+	max-width: 100%;
+}
+.btn__primary {
+	background: #e2492f;
+	color: #fff;
+	border-radius: 0;
+	&:hover {
+		background: #fff;
+		border: 1px solid #757575;
+	}
+}
+@media all and (min-width: 1200px) {
+	.container {
+	    max-width: 1040px;
+	}
+}
+@media all and (max-width: 575px) {
+	.wd-sm-100 {
+		width: 100%;
+	}
+}

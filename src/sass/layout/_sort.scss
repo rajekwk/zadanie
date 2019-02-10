@@ -1,0 +1,10 @@
+.sorting-button {
+	margin-left: 15px;
+	svg {
+		width: 25px;
+		fill: #ccc;
+		&:hover {
+			fill: #e2492f;
+		}
+	}
+}

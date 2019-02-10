@@ -1,0 +1,59 @@
+.header {
+    height: 181px;
+    background: url(../images/header.jpg) top 10px center no-repeat;
+    border-bottom: 1px solid #dcdcdc;
+    .header__bar {
+        display: block;
+        background: #fff;
+        height: 10px;
+        -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    }
+    &__row {
+        height: 171px;
+        .header__logo {
+            margin-right: 20px;
+            position: relative;
+            top: calc(50% - 55px);
+            @media all and (max-width: 767px) {
+                width: 80px;
+                top: calc(50% - 40px);
+            }
+            @media all and (max-width: 575px) {
+                width: 50px;
+                top: 20px;
+            }
+        }
+        .header__company-name {
+            font-weight: 900;
+            color: #373737;
+            font-size: 50px;
+            line-height: 44px;
+            position: relative;
+            top: calc(50% - 44px);
+            @media all and (max-width: 991px) {
+                font-size: 40px;
+            }
+            @media all and (max-width: 767px) {
+                font-size: 30px;
+                line-height: 32px;
+                top: calc(50% - 32px);
+            }
+            @media all and (max-width: 575px) {
+                font-size: 24px;
+                line-height: 26px;
+                top: 20px;
+            }
+        }
+        .header__small {
+            font-size: 12px;
+            line-height: 16px;
+            position: relative;
+            top: calc(50% - 7px);
+            @media all and (max-width: 991px) {
+                top: calc(50% - 16px);
+            }
+        }
+    }
+}

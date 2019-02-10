@@ -1,0 +1,135 @@
+.sidebar {
+	padding-left: 40px;
+	@media all and (max-width: 1199px) {
+		padding-left: 20px;
+	}
+	@media all and (max-width: 767px) {
+		display: none;
+		position: absolute;
+		background: #fff;
+		width: 100%;
+		max-width: 540px;
+		z-index: 3;
+		top: 0;
+	}
+	@media all and (min-width: 768px) {
+		display: block !important;
+	}
+	.fa-star--default, .fa-star--checked {
+		color: #ffb800;
+	}
+	&__cart {
+		h2 {
+			font-size: 16px; 
+			line-height: 29px;
+			font-weight: normal;
+			&::before {
+				content: '';
+				display: block;
+				background: url(../images/cart.jpg);
+				width: 28px;
+				height: 28px;
+				float: left;
+				margin-right: 10px;
+			}
+		}
+		.product-details {
+			border-left: 1px solid rgba(0,0,0,.1);
+			&__name {
+				color: #e2492f;
+				font-size: 12px;
+				margin-bottom: 5px;
+			}
+			&__price {
+				color: #757575;
+				margin-bottom: 5px;
+			}
+		}
+		.btn__primary--cart {
+			font-size: 12px;
+			i {
+				margin-right: 10px;
+			}
+			@media all and (min-width: 768px) and (max-width: 991px) {
+				&:first-child {
+					margin-bottom: 10px;
+				}
+			}
+		}
+		.close-btn {
+		    position: absolute;
+		    right: 20px;
+		    margin-top: -10px;
+		    cursor: pointer;
+		    display: none;
+		}
+	}
+	&__categories {
+		margin-top: 50px;
+		h2 {
+			font-size: 16px; 
+			line-height: 29px;
+			font-weight: normal;
+			&::before {
+				content: '';
+				display: block;
+				background: url(../images/categories.jpg);
+				width: 28px;
+				height: 28px;
+				float: left;
+				margin-right: 10px;
+			}
+		}
+		ul {
+			padding-left: 0px;
+			margin-top: 20px;
+			li {
+				border-bottom: 1px solid #ccc;
+				list-style: none;
+				padding: 6px 0;
+				&::before {
+					content: '\f054';
+					font: normal 8px/1 FontAwesome;
+					margin-right: 10px;
+					position: relative;
+					top: -2px;
+				}
+				a {
+					color: #757575;
+					&:hover {
+						color: #e2492f;
+					}
+				}
+			}
+		}
+	}
+}
+
+.show-hide {
+	display: none;
+	z-index: 3;
+	@media all and (max-width: 767px) {
+		display: block;
+		position: fixed;
+		top: calc(50% - 20px);
+		right: -25px;
+		padding: 10px 10px;
+		color: #fff;
+		background: #e2492f;
+		cursor: pointer;
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	}
+}
+
+.bg {
+	height: 100%;
+	position: fixed;
+	background: #fff;
+	width: 100%;
+	display: none;
+	z-index: 2;
+}
